@@ -1,0 +1,86 @@
+drwxrwxr-x 2 ec2-user ec2-user   6 Sep  4 06:34 mydir
+
+
+user=7								d (rwx) (rwx)( r-x )
+grou=7
+others=5
+
+
+
+1.create a file "file2" in linux and identifynthe permissioms for it.
+-rw-rw-r-- 1 ec2-user ec2-user   0 Aug 31 11:57 file2
+
+user =6
+group=6
+other=4
+chmod 664 file2
+
+
+
+
+2.create a directory "dir2" in linux and identify the permissions for it.
+drwxrwxr-x 2 ec2-user ec2-user   6 Sep  4 07:01 mydir2
+user =7
+group=7
+other=5
+
+
+
+
+3.provide executive permissions formthe user for file2.
+
+-rw-rw-r-- 1 ec2-user ec2-user   0 Aug 31 11:57 file2
+
+
+user =rw=6
+group=rw=6
+others=r=4
+Req for user:rwx=7
+chmod 764 file2
+-rwxrw-r-- 1 ec2-user ec2-user   0 Aug 31 11:57 file2
+
+
+
+4.create a file and provide full permissions (everything).
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep  4 07:11 file3
+user =6
+group=6
+other=4
+req:
+user =7
+group=7
+other=7
+
+chmod 777 file3
+-rwxrwxrwx 1 ec2-user ec2-user   0 Sep  4 07:11 file3
+
+
+5.creat a file with onlyread permission for all,and then add executable permission to group.
+
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep  4 07:17 file4
+req1:
+chmod 444 file4
+
+-r--r--r-- 1 ec2-user ec2-user   0 Sep  4 07:17 file4
+req2:
+ chmod 454 file4
+-r--r-xr-- 1 ec2-user ec2-user   0 Sep  4 07:17 file4
+
+
+6.create a directory with read,write and execuite permissions for user; read and execute for group and nothing for other.
+
+drwxrwxr-x 2 ec2-user ec2-user   6 Sep  4 07:30 dir1
+
+
+user =7
+group=7
+other=5
+
+req:
+chmod 750 dir1
+drwxr-x--- 2 ec2-user ec2-user   6 Sep  4 07:30 dir1
+drwxr-x--- 2 ec2-user ec2-user   6 Sep  4 07:30 dir1
+
+7.create nested directory and update the files permissions recursively.
+
+movie/hollywood/avengers
