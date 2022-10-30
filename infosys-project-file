@@ -1,0 +1,5 @@
+1.	Storage/physical: Memory and disk hardware components (equivalent to Level IV in Figure 3.1).
+2.	Processing: Computation and logic provided by the processor (processing occurs at Levels I and II in Figure 3.1).
+3.	Infrastructure: This refers to the human and external interfaces and also the network, referred to as extra structure. (This is Level III in Figure 3.1, although the human or external interfaces are not shown there.)
+4.	Application/content: This is the data processed by the application into information. (This is Level V in Figure 3.1.)
+5.	Intelligence: Additional computer-based logic that transforms information to knowledge.
