@@ -1,0 +1,7 @@
+pipeline
+Agent any{
+stages{
+steps
+step(git)
+}
+)
